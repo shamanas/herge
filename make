@@ -1,6 +1,12 @@
+#!/bin/sh
 
-OOC_FLAGS="-v -nolines -g +-rdynamic"
+OOC=rock
+OOC_FLAGS="-v --nolines -g +-rdynamic"
 
 mkdir -p bin
-rock ${OOC_FLAGS} -sourcepath=source herge/main -o=bin/herge
+${OOC} ${OOC_FLAGS} --sourcepath=source herge/main
+cd snowflake
+make
+cd ..
+cp snowflake/main bin/herge
 
