@@ -12,6 +12,8 @@ BuildParams: class {
                     outPath = value
                 case "prefix" =>
                     prefix = value
+                case "self" =>
+                    // We just ignore it, self is always set
                 case =>
                     "Unknown option --%s" printfln(key)
             }
