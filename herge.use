@@ -1,0 +1,4 @@
+Name: herge
+Description: Generates ooc parsers
+SourcePath: source
+Main: herge.ooc
